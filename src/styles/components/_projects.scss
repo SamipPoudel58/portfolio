@@ -1,0 +1,86 @@
+.projects {
+  &__project {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6.2rem;
+    margin-bottom: 6rem;
+  }
+  &__image {
+    display: block;
+    width: 450px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1;
+    color: var(--c-text-black);
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    color: var(--c-text-gray);
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  &__stacks {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  &__stack {
+    background-color: var(--c-gray-light);
+    color: var(--c-text-gray);
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+    &-live {
+      display: block;
+      background-color: var(--c-primary);
+      color: var(--c-off-white);
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 1rem 2.2rem;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--c-off-white);
+        color: var(--c-primary);
+        border: 2px solid var(--c-primary);
+      }
+    }
+
+    &-more {
+      display: block;
+      background-color: var(--c-off-white);
+      color: var(--c-primary);
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 1rem 2.2rem;
+      border: 2px solid var(--c-primary);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--c-primary);
+        color: var(--c-off-white);
+      }
+    }
+  }
+}
