@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --c-primary: #865ddc;
+  --c-primary-light: #cabbe9;
+  --c-primary-dark: #865ddc;
+  --c-text-black: #1e1e1e;
+  --c-text-gray: #5a5a5a;
+  --c-gray-light: #dcdcdc;
+  --c-off-white: #fdfcfc;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--c-off-white);
+}
+
+a,
+a:active,
+a:hover {
+  text-decoration: none;
+}

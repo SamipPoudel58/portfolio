@@ -1,11 +1,13 @@
 import React from "react"
+import Intro from "../components/Intro"
+import Navigation from "../components/Navigation"
 import "../styles/index.scss"
 
 export default function Home() {
   return (
     <div>
-      <h1>Red</h1>
-      Hello world!
+      {/* <Navigation /> */}
+      <Intro />
     </div>
   )
 }
