@@ -21,7 +21,7 @@ const Projects = ({ title, description, image, link, stacks }) => {
           <a href={link} className="projects__links-live">
             View Live
           </a>
-          <a href="" className="projects__links-more">
+          <a href={link} className="projects__links-more">
             See More
           </a>
         </div>

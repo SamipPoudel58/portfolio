@@ -22,7 +22,7 @@ const Contact = () => {
             <p className="contact__resume-details">
               You can find my resume here
             </p>
-            <a href="" className="contact__resume-link minor-links">
+            <a href="/" className="contact__resume-link minor-links">
               Download My Resume
             </a>
           </div>

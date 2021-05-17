@@ -15,9 +15,8 @@ export default function Home() {
       <Intro />
       <section className="projects limit-width-lg">
         <h1 className="heading-lg">Projects</h1>
-
         {data.map((project, index) => {
-          if (index >= 3) return 0
+          if (index >= 3) return null
           return (
             <Project
               key={project.id}
@@ -29,6 +28,9 @@ export default function Home() {
             />
           )
         })}
+        <a href="/projects" className="projects__allProjects">
+          More Projects <span>&rarr;</span>
+        </a>
       </section>
       <Skills />
       <Contact />

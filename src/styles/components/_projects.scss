@@ -1,4 +1,5 @@
 .projects {
+  text-align: center;
   &__project {
     display: flex;
     align-items: flex-start;
@@ -79,6 +80,24 @@
         background-color: var(--c-primary);
         color: var(--c-off-white);
       }
+    }
+  }
+
+  &__allProjects {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: var(--c-primary);
+    padding: 0.5rem 0;
+    margin: 5rem 0;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid var(--c-primary);
+    }
+
+    &:hover span {
+      transform: scale(4);
     }
   }
 }
