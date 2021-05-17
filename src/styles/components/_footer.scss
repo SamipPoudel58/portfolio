@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 8rem;
+
+  &__copyright {
+    font-size: 1.8rem;
+    color: var(--c-text-gray);
+  }
+
+  &__socialLinks {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__socialLink {
+    display: inline-block;
+    background-color: var(--c-gray-light);
+    color: var(--c-text-gray);
+    line-height: 0;
+    padding: 1.1rem;
+    border-radius: 50%;
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    &:hover svg {
+      fill: var(--c-primary);
+    }
+  }
+}

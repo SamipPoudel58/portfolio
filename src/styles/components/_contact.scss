@@ -1,0 +1,23 @@
+.contact {
+  padding-bottom: 3rem;
+  &__greet {
+    font-size: 4.8rem;
+    font-family: "PlayFair Display";
+    color: var(--c-text-black);
+    margin: 2.5rem 0 2rem 0;
+  }
+
+  &__contents {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    width: 50%;
+    font-size: 1.8rem;
+  }
+
+  &__resume {
+    font-size: 1.8rem;
+  }
+}

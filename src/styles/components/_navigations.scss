@@ -9,6 +9,22 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
+    transition: all 0.3s;
+
+    &-active {
+      backdrop-filter: blur(5px);
+      background-color: hsla(0, 0%, 100%, 0.4);
+    }
+  }
+
+  &__wrapper-active &__navlink,
+  &__wrapper-active &__logo {
+    color: var(--c-text-black);
+    &:hover,
+    &-active {
+      border-bottom: 3px solid var(--c-text-black);
+    }
   }
 
   &__logo {
@@ -16,6 +32,7 @@
     font-family: "Playfair Display", sans-serif;
     font-size: 2.4rem;
     font-weight: bold;
+    transition: color 0.3s;
   }
 
   &__navlinks {
@@ -29,6 +46,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     padding-bottom: 0.5rem;
+    transition: color 0.3s;
 
     &:hover,
     &-active {

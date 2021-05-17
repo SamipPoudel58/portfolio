@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Samiptter",
+    "description": "An advanced social media site",
+    "image": "/project2.png",
+    "stacks": ["React", "Redux", "Node.js", "MongoDB"],
+    "link": "samiptter.herokuapp.com"
+  },
+  {
+    "id": 2,
+    "title": "Kollab",
+    "description": "An advanced social media site",
+    "image": "/project1.jpg",
+    "stacks": ["React", "Redux", "Node.js", "MongoDB"],
+    "link": "samiptter.herokuapp.com"
+  },
+  {
+    "id": 3,
+    "title": "Kollab",
+    "description": "An advanced social media site",
+    "image": "/project1.jpg",
+    "stacks": ["React", "Redux", "Node.js", "MongoDB"],
+    "link": "samiptter.herokuapp.com"
+  },
+  {
+    "id": 4,
+    "title": "Kollab",
+    "description": "An advanced social media site",
+    "image": "/project1.jpg",
+    "stacks": ["React", "Redux", "Node.js", "MongoDB"],
+    "link": "samiptter.herokuapp.com"
+  }
+]
