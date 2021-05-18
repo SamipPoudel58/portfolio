@@ -5,6 +5,7 @@ import Navigation from "../components/Navigation"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Head from "../components/Head"
 
 export const query = graphql`
   query($slug: String!) {
@@ -45,6 +46,7 @@ const Blog = props => {
   }
   return (
     <div>
+      <Head title={props.data.contentfulBlogPost.title} />
       <Navigation active={true} />
       <div className="py-3"></div>
       <section className="blogTemplate limit-width-sm">

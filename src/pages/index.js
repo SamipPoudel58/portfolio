@@ -7,10 +7,12 @@ import Skills from "../components/Skills"
 import Project from "../components/Project"
 import data from "../data/projects.json"
 import "../styles/index.scss"
+import Head from "../components/Head"
 
 export default function Home() {
   return (
     <div>
+      <Head title="Home" />
       <Navigation active={false} />
       <Intro />
       <section className="projects limit-width-lg">
@@ -28,9 +30,11 @@ export default function Home() {
             />
           )
         })}
-        <a href="/projects" className="projects__allProjects">
-          More Projects <span>&rarr;</span>
-        </a>
+        <div className="projects__allProjects">
+          <a href="/projects">
+            More Projects <span>&rarr;</span>
+          </a>
+        </div>
       </section>
       <Skills />
       <Contact />

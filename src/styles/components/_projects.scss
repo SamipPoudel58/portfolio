@@ -1,5 +1,4 @@
 .projects {
-  text-align: center;
   &__project {
     display: flex;
     align-items: flex-start;
@@ -10,7 +9,7 @@
     width: 450px;
     height: 260px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 16px;
   }
 
   &__title {
@@ -84,20 +83,23 @@
   }
 
   &__allProjects {
-    display: inline-block;
-    font-size: 1.8rem;
-    color: var(--c-primary);
-    padding: 0.5rem 0;
-    margin: 5rem 0;
-    font-weight: bold;
-    border-bottom: 2px solid transparent;
+    text-align: center;
+    a {
+      display: inline-block;
+      font-size: 1.8rem;
+      color: var(--c-primary);
+      padding: 0.5rem 0;
+      margin: 5rem 0;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
 
-    &:hover {
-      border-bottom: 2px solid var(--c-primary);
-    }
+      &:hover {
+        border-bottom: 2px solid var(--c-primary);
+      }
 
-    &:hover span {
-      transform: scale(4);
+      &:hover span {
+        transform: scale(4);
+      }
     }
   }
 }

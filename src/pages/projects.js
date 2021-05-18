@@ -1,6 +1,7 @@
 import React from "react"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
+import Head from "../components/Head"
 import Navigation from "../components/Navigation"
 import Project from "../components/Project"
 import data from "../data/projects.json"
@@ -8,6 +9,7 @@ import data from "../data/projects.json"
 export default function Home() {
   return (
     <div>
+      <Head title="Projects" />
       <Navigation active={true} />
       <div className="py-3"></div>
       <section className="projects limit-width-lg ">

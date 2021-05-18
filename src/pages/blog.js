@@ -2,6 +2,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import React from "react"
 import Navigation from "../components/Navigation"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Head from "../components/Head"
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
@@ -23,6 +24,7 @@ const Blog = () => {
 
   return (
     <div>
+      <Head title="Blogs by Samip" />
       <Navigation active={true} />
       <div className="py-3"></div>
       <section className="blog limit-width-sm">
