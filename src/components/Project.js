@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const Projects = ({ title, description, image, index, link, stacks }) => {
   const data = useStaticQuery(graphql`
     query {
-      allImageSharp {
+      allImageSharp(sort: { fields: original___src }) {
         edges {
           node {
             gatsbyImageData

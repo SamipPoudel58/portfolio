@@ -16,12 +16,16 @@ const Blog = () => {
             cover {
               gatsbyImageData(layout: FULL_WIDTH)
             }
+            body {
+              childMarkdownRemark {
+                timeToRead
+              }
+            }
           }
         }
       }
     }
   `)
-
   return (
     <div>
       <Head title="Blogs by Samip" />
@@ -39,7 +43,8 @@ const Blog = () => {
                 <div className="blog__details">
                   <h3 className="blog__details-title">{edge.node.title}</h3>
                   <p className="blog__details-date">
-                    {edge.node.publishedDate}
+                    {edge.node.publishedDate} .{" "}
+                    {edge.node.body.childMarkdownRemark.timeToRead} min read
                   </p>
                 </div>
                 <GatsbyImage

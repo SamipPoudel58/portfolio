@@ -5,7 +5,8 @@
     "description": "An advanced social media site",
     "image": "../images/project1.png",
     "stacks": ["React", "Redux", "Node.js", "MongoDB"],
-    "link": "https://samiptter.herokuapp.com"
+    "link": "https://samiptter.herokuapp.com",
+    "github": "https://github.com/SamipPoudel58/samiptter"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "description": "A complete ecommerce site",
     "image": "../images/project2.png",
     "stacks": ["Node.js", "Express", "MongoDB", "EJS"],
-    "link": "https://shopmip.herokuapp.com"
+    "link": "https://shopmip.herokuapp.com",
+    "github": "https://github.com/SamipPoudel58/shopmip"
   },
   {
     "id": 3,
@@ -21,6 +23,7 @@
     "description": "Product Showcase and Management Website",
     "image": "../images/project3.png",
     "stacks": ["React", "Redux", "Node.js", "MongoDB"],
-    "link": "https://thehungrywords.herokuapp.com"
+    "link": "https://thehungrywords.herokuapp.com",
+    "github": "https://github.com/SamipPoudel58/hungrywebsite"
   }
 ]

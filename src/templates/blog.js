@@ -19,6 +19,7 @@ export const query = graphql`
       body {
         childMarkdownRemark {
           html
+          timeToRead
         }
       }
     }
@@ -31,7 +32,6 @@ const md = new MarkdownIt({
 })
 
 const Blog = props => {
-  console.log(props.data)
   const htmlContent =
     props.data.contentfulBlogPost.body.childMarkdownRemark.html
 
@@ -54,7 +54,9 @@ const Blog = props => {
           {props.data.contentfulBlogPost.title}
         </h1>
         <p className="blogTemplate__date">
-          {props.data.contentfulBlogPost.publishedDate}
+          {props.data.contentfulBlogPost.publishedDate} .{" "}
+          {props.data.contentfulBlogPost.body.childMarkdownRemark.timeToRead}{" "}
+          min read
         </p>
         <div
           className="blogTemplate__content"
