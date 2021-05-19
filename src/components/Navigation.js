@@ -13,8 +13,9 @@ const Navigation = ({ active }) => {
       }
     }
   }
-
-  window.addEventListener("scroll", changeBackground)
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", changeBackground)
+  }
   return (
     <header
       className={
