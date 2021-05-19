@@ -6,6 +6,7 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Head from "../components/Head"
+// import MyAwesomeCodeSnippet from "../components/codeSnippet"
 
 export const query = graphql`
   query($slug: String!) {
@@ -43,6 +44,10 @@ const Blog = props => {
         )
       },
     },
+    // ,
+    // renderMark: {
+    //   [MARKS.CODE]: code => <MyAwesomeCodeSnippet>{code}</MyAwesomeCodeSnippet>,
+    // },
   }
   return (
     <div>

@@ -1,9 +1,26 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-const Projects = ({ title, description, image, link, stacks }) => {
+const Projects = ({ title, description, image, index, link, stacks }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allImageSharp {
+        edges {
+          node {
+            gatsbyImageData
+          }
+        }
+      }
+    }
+  `)
   return (
     <div className="projects__project py-3">
-      <img className="projects__image" src={image} alt="project preview" />
+      <GatsbyImage
+        className="projects__image"
+        image={data.allImageSharp.edges[index].node.gatsbyImageData}
+        alt="coverPhoto"
+      />
       <div className="projects__detail">
         <h2 className="projects__title">{title}</h2>
         <p className="projects__description">{`${description.substring(

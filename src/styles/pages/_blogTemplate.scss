@@ -60,5 +60,18 @@
       text-decoration: none;
       color: var(--c-primary);
     }
+
+    hr {
+      margin: 5rem 0;
+      background-color: var(--c-gray-light);
+      border: none;
+      height: 1px;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--c-primary);
+      padding: 1.5rem 1rem;
+      background-color: #f7f7f7;
+    }
   }
 }

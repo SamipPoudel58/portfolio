@@ -27,6 +27,7 @@ export default function Home() {
               image={project.image}
               stacks={project.stacks}
               link={project.link}
+              index={index}
             />
           )
         })}
