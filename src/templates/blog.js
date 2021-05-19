@@ -1,12 +1,12 @@
 import { graphql } from "gatsby"
-import React from "react"
-import { renderRichText } from "gatsby-source-contentful/rich-text"
+import React, { useEffect } from "react"
+import MarkdownIt from "markdown-it"
+import Prism from "prismjs"
 import Navigation from "../components/Navigation"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Head from "../components/Head"
-// import MyAwesomeCodeSnippet from "../components/codeSnippet"
 
 export const query = graphql`
   query($slug: String!) {
@@ -17,38 +17,28 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
       body {
-        raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            __typename
-            fixed(width: 1600) {
-              width
-              height
-              src
-              srcSet
-            }
-          }
+        childMarkdownRemark {
+          html
         }
       }
     }
   }
 `
 
+const md = new MarkdownIt({
+  html: true,
+  linkify: false,
+})
+
 const Blog = props => {
-  const options = {
-    renderNode: {
-      "embedded-asset-block": node => {
-        return (
-          <img src={node.data.target.fixed.src} alt={node.data.target.title} />
-        )
-      },
-    },
-    // ,
-    // renderMark: {
-    //   [MARKS.CODE]: code => <MyAwesomeCodeSnippet>{code}</MyAwesomeCodeSnippet>,
-    // },
-  }
+  console.log(props.data)
+  const htmlContent =
+    props.data.contentfulBlogPost.body.childMarkdownRemark.html
+
+  useEffect(() => {
+    Prism.highlightAll()
+  })
+
   return (
     <div>
       <Head title={props.data.contentfulBlogPost.title} />
@@ -66,9 +56,10 @@ const Blog = props => {
         <p className="blogTemplate__date">
           {props.data.contentfulBlogPost.publishedDate}
         </p>
-        <div className="blogTemplate__content">
-          {renderRichText(props.data.contentfulBlogPost.body, options)}
-        </div>
+        <div
+          className="blogTemplate__content"
+          dangerouslySetInnerHTML={{ __html: md.render(htmlContent) }}
+        ></div>
         <hr className="blogTemplate__hr" />
       </section>
       <Contact />
