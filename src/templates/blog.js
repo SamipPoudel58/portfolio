@@ -7,6 +7,7 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Head from "../components/Head"
+import "../styles/prism-dracula.css"
 
 export const query = graphql`
   query($slug: String!) {

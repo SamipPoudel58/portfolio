@@ -4,7 +4,7 @@
       ["prismjs", {
         "languages": ["javascript", "css", "markup"],
         "plugins": ["show-language"],
-        "theme": "dracula",
+        "theme": "okaidia",
         "css": true
       }]
     ]
