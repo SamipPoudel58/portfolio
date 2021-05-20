@@ -27,7 +27,7 @@ const Blog = () => {
     }
   `)
   return (
-    <div>
+    <div className="blog__wrapper">
       <Head title="Blogs by Samip" />
       <Navigation active={true} />
       <div className="py-3"></div>
@@ -38,7 +38,7 @@ const Blog = () => {
         </p>
         <div className="blog__blogs">
           {data.allContentfulBlogPost.edges.map(edge => (
-            <Link to={edge.node.slug}>
+            <Link key={edge.node.slug} to={edge.node.slug}>
               <div className="blog__blog">
                 <div className="blog__details">
                   <h3 className="blog__details-title">{edge.node.title}</h3>

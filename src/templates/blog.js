@@ -41,7 +41,7 @@ const Blog = props => {
   })
 
   return (
-    <div>
+    <div className="blogTemplate__wrapper">
       <Head title={props.data.contentfulBlogPost.title} />
       <Navigation active={true} />
       <div className="py-3"></div>

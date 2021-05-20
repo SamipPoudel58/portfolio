@@ -87,6 +87,9 @@
   }
 }
 
+#burger-container.open span {
+  background-color: var(--c-off-white) !important;
+}
 #burger-container.open span:nth-child(2) {
   width: 0;
   opacity: 0;

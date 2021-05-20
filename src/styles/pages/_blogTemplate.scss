@@ -1,9 +1,12 @@
 .blogTemplate {
   margin-top: 5rem;
+  @media only screen and (max-width: 600px) {
+    padding: 0 2rem;
+  }
 
   &__cover {
     width: 100%;
-    height: 360px;
+    max-height: 360px;
     border-radius: 0.8rem;
   }
 
@@ -16,7 +19,7 @@
   }
 
   &__date {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1.8rem;
     color: var(--c-text-gray);
   }
@@ -54,7 +57,7 @@
 
     h3 {
       padding-top: 4rem;
-      padding-bottom: 1rem;
+      padding-bottom: 1.5rem;
     }
 
     a {
