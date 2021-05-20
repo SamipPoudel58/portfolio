@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section className="skills__wrapper">
       <div className="skills limit-width-lg">
-        <h1 className="heading-lg">Skills</h1>
+        <h1 className="heading-lg skills__heading">Skills</h1>
 
         <div className="skills__content">
           <div className="skills__names">
@@ -42,12 +42,12 @@ const Skills = () => {
               <h3 className="skills__category-name">Others</h3>
               <div className="skills__skills">
                 <ul className="skills__skills-left">
-                  <li className="skills__skill">Git (Version Control)</li>
+                  <li className="skills__skill">Git </li>
                   <li className="skills__skill">SEO</li>
                   <li className="skills__skill">Webpack</li>
                 </ul>
                 <ul className="skills__skills-right">
-                  <li className="skills__skill">Responsive Web Design</li>
+                  <li className="skills__skill">Responsive Design</li>
                   <li className="skills__skill">VS Code</li>
                   <li className="skills__skill">Heroku</li>
                 </ul>
@@ -59,7 +59,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
                 height="1em"
@@ -75,7 +75,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
                 height="1em"
@@ -92,7 +92,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
                 height="1em"
@@ -108,7 +108,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
                 height="1em"
@@ -124,7 +124,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
                 height="1em"
@@ -140,7 +140,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 version="1.1"
                 viewBox="0 0 32 32"
                 height="1em"
@@ -154,7 +154,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 version="1.1"
                 viewBox="0 0 32 32"
                 height="1em"
@@ -168,7 +168,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 version="1.1"
                 viewBox="0 0 32 32"
                 height="1em"
@@ -182,7 +182,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
                 height="1em"
@@ -197,7 +197,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
                 height="1em"
@@ -213,7 +213,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 role="img"
                 viewBox="0 0 24 24"
                 height="1em"
@@ -228,7 +228,7 @@ const Skills = () => {
               <svg
                 stroke="currentColor"
                 fill="currentColor"
-                stroke-width="0"
+                strokeWidth="0"
                 version="1.1"
                 viewBox="0 0 32 32"
                 height="1em"

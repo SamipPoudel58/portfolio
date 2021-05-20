@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-const Projects = ({ title, description, image, index, link, stacks }) => {
+const Projects = ({ title, description, github, index, link, stacks }) => {
   const data = useStaticQuery(graphql`
     query {
       allImageSharp(sort: { fields: original___src }) {
@@ -25,7 +25,7 @@ const Projects = ({ title, description, image, index, link, stacks }) => {
         <h2 className="projects__title">{title}</h2>
         <p className="projects__description">{`${description.substring(
           0,
-          40
+          30
         )}...`}</p>
         <div className="projects__stacks">
           {stacks.map((stack, index) => (
@@ -38,7 +38,7 @@ const Projects = ({ title, description, image, index, link, stacks }) => {
           <a href={link} className="projects__links-live">
             View Live
           </a>
-          <a href={link} className="projects__links-more">
+          <a href={github} className="projects__links-more">
             See More
           </a>
         </div>

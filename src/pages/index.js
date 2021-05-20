@@ -28,6 +28,7 @@ export default function Home() {
               stacks={project.stacks}
               link={project.link}
               index={index}
+              github={project.github}
             />
           )
         })}

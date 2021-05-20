@@ -1,23 +1,47 @@
 .contact {
   padding-bottom: 3rem;
+  margin-top: 3rem;
+  @media only screen and (max-width: 1024px) {
+    padding: 0 5rem 3rem 5rem;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0 3rem 2rem;
+  }
   &__greet {
     font-size: 4.8rem;
     font-family: "PlayFair Display";
     color: var(--c-text-black);
     margin: 2.5rem 0 2rem 0;
+    @media only screen and (max-width: 600px) {
+      line-height: 1;
+      margin-bottom: 4rem;
+      margin-top: 0;
+      font-size: 4rem;
+    }
   }
 
   &__contents {
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   }
 
   &__description {
     width: 50%;
     font-size: 1.8rem;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   &__resume {
     font-size: 1.8rem;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      margin-top: 3rem;
+    }
   }
 }

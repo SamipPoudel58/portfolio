@@ -15,6 +15,11 @@
   color: var(--c-text-black);
   margin: 2.5rem 0 3rem 0;
   text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 4rem;
+    margin: 1.5rem 0;
+  }
 }
 
 .minor-links {
@@ -51,4 +56,48 @@
 .px-3 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+#burger-container {
+  display: none;
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 30;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+#burger {
+  display: block;
+  cursor: pointer;
+
+  span {
+    background-color: var(--c-off-white);
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 0.4s;
+  }
+}
+
+#burger-container.open span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+#burger-container.open span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 15px;
+}
+
+#burger-container.open span:nth-child(3) {
+  transform: rotate(45deg);
+  top: -5px;
 }

@@ -4,9 +4,22 @@
   align-items: flex-end;
   margin-bottom: 4rem;
 
+  @media only screen and (max-width: 1024px) {
+    padding: 0 5rem;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 2rem 2rem 0;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   &__copyright {
     font-size: 1.8rem;
     color: var(--c-text-gray);
+    @media only screen and (max-width: 600px) {
+      padding-top: 2rem;
+    }
   }
 
   &__socialLinks {
