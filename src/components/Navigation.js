@@ -1,8 +1,14 @@
 import { Link } from "gatsby"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 const Navigation = ({ active }) => {
   const [navbar, setNavbar] = useState(active)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", changeBackground)
+    }
+  })
 
   const changeBackground = () => {
     if (window.scrollY >= Math.round(window.innerHeight)) {
@@ -13,8 +19,10 @@ const Navigation = ({ active }) => {
       }
     }
   }
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", changeBackground)
+
+  const burgerClickHandler = () => {
+    document.querySelector(".navigation__hiddenNav").classList.toggle("shown")
+    document.getElementById("burger-container").classList.toggle("open")
   }
   return (
     <header
@@ -96,12 +104,10 @@ const Navigation = ({ active }) => {
       </div>
       <div
         id="burger-container"
-        onClick={() => {
-          document
-            .querySelector(".navigation__hiddenNav")
-            .classList.toggle("shown")
-          document.getElementById("burger-container").classList.toggle("open")
-        }}
+        onClick={burgerClickHandler}
+        onKeyDown={burgerClickHandler}
+        role="button"
+        tabIndex={0}
       >
         <div id="burger">
           <span></span>
