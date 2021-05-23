@@ -5,14 +5,14 @@ const Head = ({ title }) => {
   return (
     <Helmet>
       <html lang="en" />
-      <title>{title}</title>
+      <title>{`${title} | Samip Poudel`}</title>
       <meta
         name="description"
         content="Fullstack Web Developer, Javascript | React | Node.js | MongoDB"
       />
       <meta
         name="keyword"
-        content="portfolio, javascript, developer, blog, web development"
+        content="samip, samip poudel, portfolio, javascript, developer, blog"
       ></meta>
     </Helmet>
   )
