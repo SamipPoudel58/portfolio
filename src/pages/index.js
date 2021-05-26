@@ -6,7 +6,7 @@ import Navigation from "../components/Navigation"
 import Skills from "../components/Skills"
 import Project from "../components/Project"
 import data from "../data/projects.json"
-import "../styles/index.scss"
+// import "../styles/index.scss"
 import Head from "../components/Head"
 
 export default function Home() {

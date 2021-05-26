@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <footer className="footer__wrapper">
       <div className="footer limit-width-lg">
-        <p className="footer__copyright">© 2021 Samip Poudel</p>
+        <p className="footer__copyright">
+          © {new Date().getFullYear()} Samip Poudel
+        </p>
         <div className="footer__socialLinks">
           <a
             href="https://github.com/SamipPoudel58"
