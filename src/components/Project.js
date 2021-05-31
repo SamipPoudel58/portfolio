@@ -29,10 +29,9 @@ const Projects = ({ title, description, github, index, link, stacks }) => {
       />
       <div className="projects__detail">
         <h2 className="projects__title">{title}</h2>
-        <p className="projects__description">{`${description.substring(
-          0,
-          30
-        )}...`}</p>
+        <p className="projects__description">{`${description.substring(0, 50)}${
+          description.length >= 50 ? "..." : ""
+        }`}</p>
         <div className="projects__stacks">
           {stacks.map((stack, index) => (
             <div key={index} className="projects__stack">

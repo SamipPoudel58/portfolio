@@ -25,5 +25,23 @@
     "stacks": ["React", "Redux", "Node.js", "MongoDB"],
     "link": "https://thehungrywords.herokuapp.com",
     "github": "https://github.com/SamipPoudel58/hungrywebsite"
+  },
+  {
+    "id": 4,
+    "title": "Weather App",
+    "description": "Know weather of your or any other city",
+    "image": "../images/project4.png",
+    "stacks": ["HTML", "CSS", "JavaScript", "API"],
+    "link": "https://weather.samip.ml/",
+    "github": "https://github.com/SamipPoudel58/weatherApp"
+  },
+  {
+    "id": 5,
+    "title": "Calculator",
+    "description": "Modern calculator with dark mode",
+    "image": "../images/project5.jpg",
+    "stacks": ["HTML", "CSS", "JavaScript"],
+    "link": "https://calc.samip.ml",
+    "github": "https://github.com/SamipPoudel58/calc"
   }
 ]
