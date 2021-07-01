@@ -18,10 +18,13 @@ const Head = ({ title }) => {
 
       <meta
         property="og:title"
-        content="Colby Fayock - Software Engineer &amp; Freelancer"
+        content="Samip Poudel - Software Engineer &amp; Freelancer"
       />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="/open_graph.png" />
+      <meta
+        property="og:image"
+        content="https://www.samippoudel.com.np/open_graph.png"
+      />
       <meta
         property="og:description"
         content="Fullstack Web Developer, Javascript | React | Node.js | MongoDB"
