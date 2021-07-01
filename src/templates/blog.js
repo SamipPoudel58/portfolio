@@ -16,6 +16,9 @@ export const query = graphql`
       publishedDate(formatString: "MMMM Do, YYYY")
       cover {
         gatsbyImageData(layout: FULL_WIDTH)
+        file {
+          url
+        }
       }
       body {
         childMarkdownRemark {
@@ -39,14 +42,13 @@ const Blog = props => {
   useEffect(() => {
     Prism.highlightAll()
   })
-
   return (
     <div className="blogTemplate__wrapper">
       <Head
         title={props.data.contentfulBlogPost.title}
         ogtitle={props.data.contentfulBlogPost.title}
         description={`Article by Samip Poudel on the topic ${props.data.contentfulBlogPost.title}`}
-        image={props.data.contentfulBlogPost.cover}
+        image={`https:${props.data.contentfulBlogPost.cover.file.url}`}
         url={`https://www.samippoudel.com.np/blog/${props.data.contentfulBlogPost.title}`}
         typeOfContent="article"
       />
