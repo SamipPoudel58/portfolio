@@ -9,7 +9,12 @@ import data from "../data/projects.json"
 export default function Home() {
   return (
     <div>
-      <Head title="Projects" />
+      <Head
+        title="Projects"
+        ogtitle="Projects made by Samip Poudel"
+        description="Built with loads of effort and tons of love!"
+        url="https://www.samippoudel.com.np/projects"
+      />
       <Navigation active={true} />
       <div className="py-3"></div>
       <section className="projects limit-width-lg ">

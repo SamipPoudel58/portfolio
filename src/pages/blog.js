@@ -28,7 +28,12 @@ const Blog = () => {
   `)
   return (
     <div className="blog__wrapper">
-      <Head title="Blogs by Samip" />
+      <Head
+        title="Blogs by Samip Poudel"
+        ogtitle="Blogs by Samip Poudel"
+        description="I write and share about programming and my journey as a software engineer"
+        url="https://www.samippoudel.com.np/blog"
+      />
       <Navigation active={true} />
       <div className="py-3"></div>
       <section className="blog limit-width-sm">

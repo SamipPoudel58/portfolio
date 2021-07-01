@@ -42,7 +42,14 @@ const Blog = props => {
 
   return (
     <div className="blogTemplate__wrapper">
-      <Head title={props.data.contentfulBlogPost.title} />
+      <Head
+        title={props.data.contentfulBlogPost.title}
+        ogtitle={props.data.contentfulBlogPost.title}
+        description={`Article by Samip Poudel on the topic ${props.data.contentfulBlogPost.title}`}
+        image={props.data.contentfulBlogPost.cover}
+        url={`https://www.samippoudel.com.np/blog/${props.data.contentfulBlogPost.title}`}
+        typeOfContent="article"
+      />
       <Navigation active={true} />
       <div className="py-3"></div>
       <section className="blogTemplate limit-width-sm">
