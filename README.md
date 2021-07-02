@@ -11,3 +11,5 @@ Re-occuring bugs and their fixes:
      window.addEventListener("scroll", changeBackground)
    }
    ```
+3. **"ChildImageSharp" option doesn't appear under the image in Graphiql playground**
+   _Fix:_ In the content model of the CMS, make sure the media field allows only single file i.e uncheck the "allow multiple files" option

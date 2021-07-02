@@ -16,8 +16,14 @@ const Head = ({ title, ogtitle, description, image, url, typeOfContent }) => {
       <meta property="og:title" content={ogtitle} />
       <meta property="og:type" content={typeOfContent} />
       <meta property="og:image" content={image} />
+      <meta property="og:image:secure_url" content={image} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:image" content={image} />
+      <meta property="twitter:site" content="@samip4sure" />
+      <meta property="twitter:creator" content="@samip4sure" />
 
       <script
         defer
