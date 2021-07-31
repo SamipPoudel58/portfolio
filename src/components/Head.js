@@ -25,11 +25,7 @@ const Head = ({ title, ogtitle, description, image, url, typeOfContent }) => {
       <meta property="twitter:site" content="@samip4sure" />
       <meta property="twitter:creator" content="@samip4sure" />
 
-      <script
-        defer
-        data-domain="samippoudel.com.np"
-        src="https://plausible.io/js/plausible.js"
-      ></script>
+      <script async src="https://cdn.splitbee.io/sb.js"></script>
     </Helmet>
   )
 }
