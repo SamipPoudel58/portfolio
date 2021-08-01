@@ -25,6 +25,12 @@
     border-radius: 16px;
   }
 
+  &__image-animate {
+    @media (prefers-reduced-motion: no-preference) {
+      animation: moveUp 1s 1;
+    }
+  }
+
   &__detail {
     display: flex;
     flex-direction: column;
@@ -127,21 +133,37 @@
 
   &__allProjects {
     text-align: center;
-    a {
+    @media only screen and (max-width: 1024px) {
+      padding: 0 5rem;
+    }
+    @media only screen and (max-width: 600px) {
+      padding: 0 3rem;
+    }
+    span {
+      margin-left: 1rem;
       display: inline-block;
+      transition: all 0.3s;
+      font-weight: bolder;
+      font-size: 2.5rem;
+      line-height: 0;
+    }
+
+    a {
+      border: 2px solid var(--c-gray-light);
+      display: block;
       font-size: 1.8rem;
-      color: var(--c-primary);
-      padding: 0.5rem 0;
+      color: var(--c-gray-light);
+      padding: 1rem 0;
       margin: 3rem 0;
       font-weight: bold;
-      border-bottom: 2px solid transparent;
 
       &:hover {
-        border-bottom: 2px solid var(--c-primary);
+        border: 2px solid var(--c-primary);
+        color: var(--c-primary);
       }
 
       &:hover span {
-        transform: scale(4);
+        transform: translateX(50%) scaleX(120%);
       }
     }
   }

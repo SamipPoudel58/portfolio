@@ -1,30 +1,43 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Projects = ({ title, description, github, index, link, stacks }) => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(
-        filter: { relativeDirectory: { eq: "images" } }
-        sort: { fields: name }
-      ) {
+      allImageSharp(sort: { fields: fluid___originalName }) {
         edges {
           node {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
-            }
+            gatsbyImageData
           }
         }
       }
     }
   `)
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const image = entry.target.querySelector(".projects__image")
+        if (entry.isIntersecting) {
+          image.classList.add("projects__image-animate")
+        } else {
+          // We're not intersecting, so remove the class!
+          image.classList.remove("projects__image-animate")
+        }
+      })
+    })
+    const projectEntries = document.querySelectorAll(".projects__project")
+    projectEntries.forEach(entry => {
+      observer.observe(entry)
+    })
+  }, [])
+
   return (
     <div className="projects__project py-3">
       <GatsbyImage
         className="projects__image"
-        image={getImage(data.allFile.edges[index].node)}
+        image={getImage(data.allImageSharp.edges[index].node)}
         alt={`cover photo for project "${title}"`}
       />
       <div className="projects__detail">
