@@ -12,7 +12,7 @@ import Head from "../components/Head"
 export default function Home() {
   return (
     <div>
-      <Head title="Home" />
+      <Head />
       <Navigation active={false} />
       <Intro />
       <section className="projects limit-width-lg">

@@ -5,13 +5,18 @@ const Head = ({ title, ogtitle, description, image, url, typeOfContent }) => {
   return (
     <Helmet>
       <html lang="en" />
-      <title>{`${title} | Samip Poudel`}</title>
+      <title>{title}</title>
 
+      <meta
+        name="title"
+        content="Samip Poudel | Full-Stack Developer | Designer"
+      />
       <meta name="description" content={description} />
       <meta
         name="keyword"
-        content="samip, samip poudel, portfolio, javascript, developer, blog"
+        content="Samip Poudel software developer freelancer designer react nodejs javascript programming web portfolio blog Kathmandu Nepal"
       ></meta>
+      <meta name="robots" content="index,follow,archive" />
 
       <meta property="og:title" content={ogtitle} />
       <meta property="og:type" content={typeOfContent} />
@@ -31,10 +36,10 @@ const Head = ({ title, ogtitle, description, image, url, typeOfContent }) => {
 }
 
 Head.defaultProps = {
-  title: "Samip Poudel",
-  ogtitle: "Samip Poudel - Software Engineer &amp; Freelancer",
+  title: "Samip Poudel | Full-Stack Developer | Freelancer",
+  ogtitle: "Samip Poudel | Full-Stack Developer | Designer",
   description:
-    "Fullstack Web Developer, Javascript | React | Node.js | MongoDB",
+    "Hey, I'm Samip. A freelance Full-Stack Web Developer from Nepal. I love design as much as Software Development. I work with JavaScript, TypeScript, React, Node.js & MongoDB.",
   image: "https://www.samippoudel.com.np/open_graph.png",
   url: "https://www.samippoudel.com.np",
   typeOfContent: "website",

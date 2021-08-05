@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div>
       <Head
-        title="Projects"
+        title="Projects | Samip Poudel"
         ogtitle="Projects made by Samip Poudel"
-        description="Built with loads of effort and tons of love!"
+        description="These are some of the projects that I have built over the years. These project reflect my passion in software and design. My most used tools are Javascript, React, Node and MongoDB."
         url="https://www.samippoudel.com.np/projects"
       />
       <Navigation active={true} />

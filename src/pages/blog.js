@@ -29,9 +29,9 @@ const Blog = () => {
   return (
     <div className="blog__wrapper">
       <Head
-        title="Blogs by Samip Poudel"
+        title="Blogs | Samip Poudel"
         ogtitle="Blogs by Samip Poudel"
-        description="I write and share about programming and my journey as a software engineer"
+        description="I write and share about programming and my journey as a software engineer. I like to write about web development, UI/UX and a bit about life as I experience it."
         url="https://www.samippoudel.com.np/blog"
       />
       <Navigation active={true} />
