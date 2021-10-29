@@ -33,10 +33,10 @@
 
   &__content {
     padding: 3rem 0;
-    font-size: 160%;
+    font-size: 1.6rem;
     line-height: 1.625;
     // color: var(--c-text-black);
-    font-family: "Gelasio", sans-serif;
+    font-family: "Karla", sans-serif;
     font-weight: 400;
 
     img {
@@ -51,8 +51,13 @@
       margin-bottom: 1rem;
     }
 
-    ul {
-      margin-left: 2rem;
+    ul,
+    ol {
+      margin: 2rem 0 2rem 2rem;
+    }
+
+    li {
+      font-size: 1.8rem;
     }
 
     h3 {
@@ -74,12 +79,59 @@
 
     blockquote {
       border-left: 3px solid var(--c-primary);
-      padding: 1.5rem 1rem;
+      padding: 1rem 1rem 1rem 2rem;
       background-color: #f7f7f7;
+      font-style: italic;
+      margin: 2rem 0;
+
+      & > p {
+        font-size: 1.6rem;
+        margin-bottom: 0rem;
+        word-wrap: break-word;
+      }
     }
 
     pre[class*="language-"] {
-      margin: 1rem 0;
+      margin: 2rem 0;
     }
+
+    /* Inline code */
+    :not(pre) > code[class*="language-"] {
+      padding: 0.4rem;
+      border-radius: 0.3em;
+      background: #f0efed;
+      color: var(--c-primary-dark);
+      text-shadow: none;
+      font-size: 1.6rem;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.navigateUp {
+  position: fixed;
+  left: 5rem;
+  bottom: 5rem;
+  background-color: var(--c-gray-light);
+  padding: 1rem;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+
+  & > svg {
+    height: 3rem;
+    position: absolute;
+    transition: color 0.3 ease;
+    color: var(--c-text-gray);
+  }
+
+  &:hover svg {
+    color: var(--c-primary);
+  }
+
+  @media only screen and (max-width: 600px) {
+    left: 1rem;
+    bottom: 1rem;
   }
 }

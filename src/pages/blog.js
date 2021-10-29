@@ -36,7 +36,7 @@ const Blog = () => {
       />
       <Navigation active={true} />
       <div className="py-3"></div>
-      <section className="blog limit-width-sm">
+      <section className="blog limit-width-blog">
         <h1 className="blog__heading">Blog</h1>
         <p className="blog__intro">
           I write about web development and share my experiences as a developer.

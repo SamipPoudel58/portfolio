@@ -27,8 +27,8 @@
   &__blog {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 4rem;
     position: relative;
     transition: opacity 0.3s;
     @media only screen and (max-width: 600px) {
@@ -87,9 +87,13 @@
   }
 
   &__cover {
-    width: 20rem;
-    min-width: 20rem;
-    min-height: 12rem;
+    // aspect-ratio: 16/9;
+    width: 100%;
+    max-width: 30rem;
+    max-height: 15.8rem;
+    // // width: 20rem;
+    // // min-width: 20rem;
+    // // min-height: 12rem;
     object-fit: cover;
     border-radius: 0.8rem;
     @media only screen and (max-width: 600px) {
