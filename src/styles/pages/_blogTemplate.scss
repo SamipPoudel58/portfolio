@@ -1,7 +1,11 @@
 .blogTemplate {
   margin-top: 5rem;
+  padding-bottom: 6.4rem;
+  @media only screen and (max-width: 800px) {
+    padding: 0 1.5rem 6.4rem;
+  }
   @media only screen and (max-width: 600px) {
-    padding: 0 2rem;
+    margin-top: 1rem;
   }
 
   &__cover {
@@ -16,17 +20,23 @@
     font-family: "PlayFair Display";
     line-height: 1.4;
     color: var(--c-text-black);
+    @media only screen and (max-width: 600px) {
+      font-size: 2.4rem;
+    }
   }
 
   &__date {
     margin-top: 1rem;
     font-size: 1.8rem;
     color: var(--c-text-gray);
+    @media only screen and (max-width: 600px) {
+      font-size: 1.6rem;
+    }
   }
 
   &__hr {
     background-color: var(--c-gray-light);
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
     border: none;
     height: 1px;
   }
@@ -49,6 +59,9 @@
     p {
       font-size: 1.8rem;
       margin-bottom: 1rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 1.4rem;
+      }
     }
 
     ul,
@@ -58,15 +71,27 @@
 
     li {
       font-size: 1.8rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    h3,
+    h2 {
+      padding-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 3rem;
     }
 
     h3 {
-      padding-top: 4rem;
-      padding-bottom: 1.5rem;
+      font-size: 2rem;
     }
 
     a {
-      text-decoration: none;
+      text-decoration: underline;
       color: var(--c-primary);
     }
 
@@ -75,6 +100,9 @@
       background-color: var(--c-gray-light);
       border: none;
       height: 1px;
+      @media only screen and (max-width: 600px) {
+        margin: 3rem 0;
+      }
     }
 
     blockquote {
@@ -88,6 +116,9 @@
         font-size: 1.6rem;
         margin-bottom: 0rem;
         word-wrap: break-word;
+        @media only screen and (max-width: 600px) {
+          font-size: 1.4rem;
+        }
       }
     }
 
@@ -104,6 +135,34 @@
       text-shadow: none;
       font-size: 1.6rem;
       word-wrap: break-word;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    code[class*="language-"],
+    pre[class*="language-"] {
+      font-family: "Fira Code", Consolas, Inconsolata, Monaco, "Courier New",
+        Courier, monospace;
+      font-size: 1.4rem;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Code blocks */
+    pre[class*="language-"] {
+      padding: 1.6rem;
+      background: #1f2937;
+    }
+
+    .token.comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata {
+      color: rgba(156, 163, 175, 1);
     }
   }
 }
@@ -121,9 +180,15 @@
 
   & > svg {
     height: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
     transition: color 0.3 ease;
     color: var(--c-text-gray);
+    @media only screen and (max-width: 600px) {
+      height: 2rem;
+    }
   }
 
   &:hover svg {
@@ -131,7 +196,10 @@
   }
 
   @media only screen and (max-width: 600px) {
-    left: 1rem;
+    left: unset;
+    right: 1rem;
     bottom: 1rem;
+    height: 4rem;
+    width: 4rem;
   }
 }

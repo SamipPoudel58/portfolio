@@ -1,8 +1,8 @@
 import { graphql } from "gatsby"
-import React from "react"
+import React, { useEffect } from "react"
 import Navigation from "../components/Navigation"
-import Contact from "../components/Contact"
-import Footer from "../components/Footer"
+// import Contact from "../components/Contact"
+// import Footer from "../components/Footer"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Head from "../components/Head"
 import "../styles/prism-dracula.css"
@@ -32,6 +32,25 @@ const Blog = props => {
   const htmlContent =
     props.data.contentfulBlogPost.body.childMarkdownRemark.html
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.onscroll = function () {
+        myFunction()
+      }
+
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight
+        var scrolled = (winScroll / height) * 100
+        document.getElementById("myBar") &&
+          (document.getElementById("myBar").style.width = scrolled + "%")
+      }
+    }
+  }, [])
+
   return (
     <div className="blogTemplate__wrapper">
       <Head
@@ -42,6 +61,9 @@ const Blog = props => {
         url={`https://www.samippoudel.com.np/blog/${props.data.contentfulBlogPost.title}`}
         typeOfContent="article"
       />
+      <div className="progress-container">
+        <div className="progress-bar" id="myBar"></div>
+      </div>
       <Navigation active={true} />
       <a href="#blogTemplate__cover">
         <div className="navigateUp">
@@ -82,9 +104,12 @@ const Blog = props => {
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         ></div>
         <hr className="blogTemplate__hr" />
+        <a className="backToBlog-link" href="/blog">
+          <span>&larr;</span> Back to the blog
+        </a>
       </section>
-      <Contact />
-      <Footer />
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   )
 }

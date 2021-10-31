@@ -36,6 +36,25 @@
   }
 }
 
+.backToBlog-link {
+  color: var(--c-primary);
+  border-bottom: 2px solid transparent;
+  font-size: 1.8rem;
+  transition: filter 0.3s ease;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    filter: brightness(80%);
+  }
+
+  & > span {
+    margin-right: 1rem;
+  }
+}
+
 .mt-3 {
   margin-top: 3rem;
 }
