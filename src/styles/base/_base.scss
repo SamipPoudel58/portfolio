@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono&display=swap");
 :root {
-  --c-primary: #0ea5e9;
-  --c-primary-light: #22d3ee;
-  --c-primary-dark: #0ea5e9;
+  --c-primary: #ff3903;
+  --c-primary-light: #fb923c;
+  --c-primary-dark: #ff3903;
+  // --c-primary: #0ea5e9;
+  // --c-primary-light: #22d3ee;
+  // --c-primary-dark: #0ea5e9;
 
   --c-text-black: #1e1e1e;
   --c-text-gray: #5a5a5a;
@@ -32,7 +35,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #0ae;
+  background-color: var(--c-primary);
 
   // background-image: -webkit-gradient(
   //   linear,
