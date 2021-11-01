@@ -22,8 +22,8 @@
   text-align: center;
 
   @media only screen and (max-width: 600px) {
-    font-size: 4rem;
-    margin: 1.5rem 0;
+    font-size: 3rem;
+    margin: 1rem 0;
   }
 }
 
@@ -98,6 +98,10 @@
 #burger {
   display: block;
   cursor: pointer;
+
+  @media only screen and (max-width: 500px) {
+    transform: scale(0.7) translateY(-5px);
+  }
 
   span {
     background-color: var(--c-off-white);

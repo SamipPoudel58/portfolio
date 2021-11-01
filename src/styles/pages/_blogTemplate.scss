@@ -23,6 +23,9 @@
     @media only screen and (max-width: 600px) {
       font-size: 2.4rem;
     }
+    @media only screen and (max-width: 500px) {
+      text-align: center;
+    }
   }
 
   &__date {
@@ -31,6 +34,9 @@
     color: var(--c-text-gray);
     @media only screen and (max-width: 600px) {
       font-size: 1.6rem;
+    }
+    @media only screen and (max-width: 500px) {
+      text-align: center;
     }
   }
 
@@ -189,6 +195,11 @@
       text-shadow: none;
       font-size: 1.6rem;
       word-wrap: break-word;
+
+      &::selection {
+        background-color: var(--c-primary);
+        color: #ffffff;
+      }
 
       @media only screen and (max-width: 600px) {
         font-size: 1.2rem;
