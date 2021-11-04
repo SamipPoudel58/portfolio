@@ -59,6 +59,7 @@
       border-radius: 0.8rem;
       display: block;
       margin: 3rem 0;
+      box-shadow: 4px 4px 24px rgba(143, 142, 142, 0.1);
     }
 
     p {
@@ -166,9 +167,9 @@
 
     blockquote {
       border-left: 3px solid var(--c-primary);
-      padding: 1rem 1rem 1rem 2rem;
+      padding: 1.5rem 1rem 1.5rem 2rem;
       background-color: #f7f7f7;
-      font-style: italic;
+      // font-style: italic;
       margin: 2rem 0;
 
       & > p {

@@ -6,7 +6,7 @@
     "image": "../images/project1.png",
     "stacks": ["React", "Redux", "Node.js", "MongoDB"],
     "link": "https://samiptter.herokuapp.com",
-    "github": "https://github.com/SamipPoudel58/samiptter"
+    "github": "/blog/samiptter"
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "image": "../images/project3.png",
     "stacks": ["React", "Redux", "Node.js", "MongoDB"],
     "link": "https://thehungrywords.herokuapp.com",
-    "github": "https://github.com/SamipPoudel58/hungrywebsite"
+    "github": "https://github.com/SamipPoudel58"
   },
   {
     "id": 4,
