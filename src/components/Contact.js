@@ -23,7 +23,7 @@ const Contact = () => {
               You can find my resume here
             </p>
             <a
-              href="/Samip Poudel - Resume.pdf"
+              href="/samip-poudel-resume.pdf"
               className="contact__resume-link minor-links"
             >
               Download My Resume
