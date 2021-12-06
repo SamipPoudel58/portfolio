@@ -32,7 +32,7 @@
     "description": "Know weather of your or any other city",
     "image": "../images/project4.png",
     "stacks": ["HTML", "CSS", "JavaScript", "API"],
-    "link": "https://weather.samip.ml/",
+    "link": "https://wayther.netlify.app/",
     "github": "https://github.com/SamipPoudel58/weatherApp"
   },
   {
@@ -41,7 +41,7 @@
     "description": "Modern calculator with dark mode",
     "image": "../images/project5.jpg",
     "stacks": ["HTML", "CSS", "JavaScript"],
-    "link": "https://calc.samip.ml",
+    "link": "https://calcoo.netlify.app",
     "github": "https://github.com/SamipPoudel58/calc"
   }
 ]
