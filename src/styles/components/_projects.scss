@@ -53,7 +53,7 @@
     font-weight: medium;
     letter-spacing: 0;
     line-height: 1;
-    color: var(--c-text-black);
+    color: var(--c-black-dark);
     margin-bottom: 1rem;
 
     @media only screen and (max-width: 1024px) {
@@ -66,7 +66,7 @@
   }
 
   &__description {
-    color: var(--c-text-gray);
+    color: var(--c-black-md);
     font-size: 1.8rem;
     letter-spacing: 0;
     line-height: 1;
@@ -90,7 +90,7 @@
 
   &__stack {
     background-color: var(--c-gray-light);
-    color: var(--c-text-gray);
+    color: var(--c-black-md);
     font-size: 1.8rem;
     line-height: 1;
     padding: 1rem 1.5rem;

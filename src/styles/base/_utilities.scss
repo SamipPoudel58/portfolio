@@ -83,8 +83,9 @@
   z-index: 30;
 
   & svg {
+    stroke: var(--c-black-dark);
     height: 2.5rem;
-    transition: all 3s;
+    transition: all 0.3s;
   }
 
   @media only screen and (max-width: 600px) {

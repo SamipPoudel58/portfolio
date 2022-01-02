@@ -1,24 +1,21 @@
 import { Link } from "gatsby"
 import React, { useState, useEffect } from "react"
 
-const Navigation = ({ active }) => {
-  const [navbar, setNavbar] = useState(active)
+const Navigation = () => {
+  // const [navbar, setNavbar] = useState(active)
   const [showMobileNav, setMobileNav] = useState(false)
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", changeBackground)
+    if (localStorage.getItem("darkMode")) {
+      document.body.classList.add("dark")
     }
   })
 
-  const changeBackground = () => {
-    if (window.scrollY >= Math.round(window.innerHeight)) {
-      setNavbar(true)
-    } else {
-      if (!active) {
-        setNavbar(false)
-      }
-    }
+  const themeToggle = () => {
+    const darkMode = localStorage.getItem("darkMode")
+    localStorage.setItem("darkMode", !darkMode)
+
+    document.body.classList.toggle("dark")
   }
 
   const burgerClickHandler = () => {
@@ -27,13 +24,7 @@ const Navigation = ({ active }) => {
     document.getElementById("burger-container").classList.toggle("open")
   }
   return (
-    <header
-      className={
-        navbar
-          ? "navigation__wrapper navigation__wrapper-active"
-          : "navigation__wrapper"
-      }
-    >
+    <header className="navigation__wrapper">
       <div className="limit-width-lg navigation">
         <nav className="navigation__mainNav">
           <ul className="navigation__navlinks">
@@ -128,7 +119,7 @@ const Navigation = ({ active }) => {
           </ul>
         </nav>
 
-        <div className="navigation__theme">
+        <button onClick={themeToggle} className="navigation__theme">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -137,7 +128,7 @@ const Navigation = ({ active }) => {
           >
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
           </svg>
-        </div>
+        </button>
       </div>
       <button
         id="burger-container"

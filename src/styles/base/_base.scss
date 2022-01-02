@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono&display=swap");
-:root {
+body {
   --c-bg-light: #1a2f55;
   --c-bg-dark: #0d1d3a;
 
@@ -12,9 +12,22 @@
   --c-text-gray: #5a5a5a;
   --c-gray-light: #dcdcdc;
   --c-off-white: #f9fafb;
+  --c-blockquote: #f7f7f7;
 
+  --c-black: #000000;
   --c-black-dark: #222222;
   --c-black-md: #444444;
+}
+
+body.dark {
+  --c-off-white: #111111;
+  --c-gray-light: #222222;
+
+  --c-blockquote: #222222;
+
+  --c-black: #ffffff;
+  --c-black-dark: #eaeaea;
+  --c-black-md: #888888;
 }
 
 *,

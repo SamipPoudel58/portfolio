@@ -130,6 +130,8 @@
     justify-content: center;
     position: relative;
     z-index: 30;
+    background-color: transparent;
+    border: none;
 
     &:hover {
       background-color: var(--c-gray-light);

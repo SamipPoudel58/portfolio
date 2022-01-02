@@ -10,7 +10,7 @@
   &__greet {
     font-size: 4.8rem;
     font-family: "PlayFair Display";
-    color: var(--c-text-black);
+    color: var(--c-black);
     margin: 2.5rem 0 2rem 0;
     @media only screen and (max-width: 600px) {
       line-height: 1;
@@ -21,6 +21,7 @@
   }
 
   &__contents {
+    color: var(--c-black-md);
     display: flex;
     justify-content: space-between;
     @media only screen and (max-width: 600px) {

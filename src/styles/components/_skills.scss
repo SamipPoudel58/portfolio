@@ -46,6 +46,7 @@
       font-size: 2.4rem;
       line-height: 1;
       margin-bottom: 2rem;
+      color: var(--c-black-dark);
 
       @media only screen and (max-width: 600px) {
         font-size: 2rem;
@@ -61,7 +62,7 @@
       list-style: none;
       font-size: 1.8rem;
       width: 50%;
-      color: var(--c-text-gray);
+      color: var(--c-black-md);
 
       @media only screen and (max-width: 600px) {
         font-size: 1.6rem;

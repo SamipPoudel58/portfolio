@@ -7,18 +7,18 @@ const Intro = () => {
         <div className="intro__content">
           <div className="intro__texts">
             <h1 className="intro__name">Samip Poudel</h1>
-            <p className="intro__job">
-              Software Engineer and Designer (very cool)
+            <p className="intro__job intro__job-main">
+              Software Engineer and Designer.
             </p>
 
             <p className="intro__job mt-1">
-              I have fixed several TV Remotes in my years as a software engineer
-              and have designed several logos for companies like Samiptter.
+              Hello! I'm a Full-Stack Web Developer based in Nepal who loves
+              bringing ideas to life through design and code.
             </p>
 
             <p className="intro__job mt-1">
-              I used black and white photo so that people will take me
-              seriously. That’s also my tinder DP
+              If you have a project in mind, think you need my help or just
+              fancy saying hey, then get in touch.
             </p>
           </div>
           <div className="intro__image">
