@@ -23,10 +23,12 @@
     transform: translate(0, -100%);
     opacity: 0;
     transition: opacity 0.5s;
+    visibility: hidden;
 
     &.shown {
       opacity: 1;
       transform: translate(0, 0);
+      visibility: visible;
     }
 
     &__navlinks {
