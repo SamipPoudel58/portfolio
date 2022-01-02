@@ -2,9 +2,9 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact__wrapper">
+    <section id="contacts" className="contact__wrapper">
       <div className="contact limit-width-lg">
-        <h1 className="contact__greet">Hey!</h1>
+        <h1 className="heading-lg text-left">Hey!</h1>
 
         <div className="contact__contents">
           <p className="contact__description">

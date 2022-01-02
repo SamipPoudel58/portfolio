@@ -2,9 +2,9 @@ import React from "react"
 
 const Skills = () => {
   return (
-    <section className="skills__wrapper">
+    <section id="skills" className="skills__wrapper">
       <div className="skills limit-width-lg">
-        <h1 className="heading-lg skills__heading">Skills</h1>
+        <h1 className="heading-lg text-left">Skills</h1>
 
         <div className="skills__content">
           <div className="skills__names">

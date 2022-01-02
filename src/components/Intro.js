@@ -5,24 +5,25 @@ const Intro = () => {
     <section className="intro__wrapper">
       <div className="intro">
         <div className="intro__content">
-          <img
-            className="intro__sun"
-            src="/retro-sun.png"
-            alt="retro sun background"
-          />
-          <h1 className="intro__info text-center">Developer | Designer</h1>
+          <div className="intro__texts">
+            <h1 className="intro__name">Samip Poudel</h1>
+            <p className="intro__job">
+              Software Engineer and Designer (very cool)
+            </p>
 
-          {/* <p className="intro__hello">Hello, I'm a</p>
-          <h1 className="intro__info">Full-Stack Developer</h1>
-          <p className="intro__subinfo">
-            who loves designing and building :&#41;
-          </p>
-          */}
-        </div>
-        <div className="intro__ctaHolder">
-          <a className="intro__cta" href="/#contact">
-            Contact Me
-          </a>
+            <p className="intro__job mt-1">
+              I have fixed several TV Remotes in my years as a software engineer
+              and have designed several logos for companies like Samiptter.
+            </p>
+
+            <p className="intro__job mt-1">
+              I used black and white photo so that people will take me
+              seriously. That’s also my tinder DP
+            </p>
+          </div>
+          <div className="intro__image">
+            <img src="/profile.jpg" alt="profile" />
+          </div>
         </div>
       </div>
     </section>

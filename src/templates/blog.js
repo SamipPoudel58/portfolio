@@ -64,7 +64,7 @@ const Blog = props => {
       <div className="progress-container">
         <div className="progress-bar" id="myBar"></div>
       </div>
-      <Navigation active={true} />
+      <Navigation active={false} />
       <a href="#blogTemplate__cover">
         <div className="navigateUp">
           <svg

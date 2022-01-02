@@ -3,12 +3,14 @@
   max-width: 1024px;
   margin: 0 auto;
 
+  @media only screen and (max-width: 1024px) {
+    padding: 0 4rem;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0 2rem;
+  }
+
   &__wrapper {
-    background: linear-gradient(
-      to right bottom,
-      var(--c-bg-light),
-      var(--c-bg-dark)
-    );
     height: 100vh;
     max-height: 800px;
 
@@ -17,106 +19,67 @@
     justify-content: flex-start;
   }
 
-  // delete this
   &__content {
-    position: relative;
-  }
-
-  &__sun {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    @media only screen and (max-width: 600px) {
-      width: 15rem;
-    }
-  }
-
-  &__hello {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--c-off-white);
-
-    @media only screen and (max-width: 800px) {
-      font-size: 3rem;
-    }
-    @media only screen and (max-width: 600px) {
-      font-size: 2.4rem;
-    }
-  }
-
-  &__info {
-    color: var(--c-off-white);
-    font-size: 6rem;
-    font-family: "PlayFair Display", serif;
-    line-height: 1.2;
-
-    position: relative;
-
-    @media only screen and (max-width: 800px) {
-      font-size: 5rem;
-    }
-    @media only screen and (max-width: 600px) {
-      font-size: 3rem;
-    }
-  }
-  &__subinfo {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--c-off-white);
-    opacity: 0.8;
-
-    @media only screen and (max-width: 800px) {
-      font-size: 2.4rem;
-    }
-    @media only screen and (max-width: 600px) {
-      font-size: 2.4rem;
-    }
-  }
-
-  &__ctaHolder {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    gap: 2rem;
 
-    transform: translateY(200%);
-
-    @media only screen and (max-width: 600px) {
-      transform: translateY(150%);
+    @media only screen and (max-width: 800px) {
+      flex-direction: column-reverse;
     }
   }
 
-  &__cta {
-    display: inline-block;
-    background-color: transparent;
-    font-size: 2rem;
-    border: 2px solid var(--c-off-white);
-    color: var(--c-off-white);
-    padding: 1rem 3rem;
-    transition: transform 0.3s ease;
-    box-shadow: 0 8px 8px transparent;
-
-    // margin-top: 15rem;
-
-    @media (prefers-reduced-motion: no-preference) {
-      animation: moveUp 0.8s;
+  &__texts {
+    max-width: 50%;
+    @media only screen and (max-width: 1024px) {
+      max-width: 60%;
     }
+    @media only screen and (max-width: 800px) {
+      max-width: 80%;
+    }
+    @media only screen and (max-width: 800px) {
+      max-width: unset;
+    }
+  }
+
+  &__name {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 6.4rem;
+    background-image: linear-gradient(
+      to right bottom,
+      var(--c-primary),
+      var(--c-primary-dark)
+    );
+    background-clip: text;
+    color: transparent;
+    line-height: 1.1;
 
     @media only screen and (max-width: 800px) {
-      font-size: 1.8rem;
-      padding: 1rem 2rem;
+      font-size: 4rem;
+      text-align: center;
     }
+  }
 
-    @media only screen and (max-width: 600px) {
+  &__job {
+    font-size: 2rem;
+    line-height: 1.5;
+    @media only screen and (max-width: 800px) {
       font-size: 1.6rem;
-      padding: 0.8rem 1.8rem;
+      text-align: center;
     }
+  }
 
-    &:hover,
-    &:active {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 8px rgba(117, 114, 114, 0.5);
+  &__image {
+    & img {
+      display: block;
+      width: 100%;
+      border-radius: 50%;
+      max-height: 30rem;
+
+      @media only screen and (max-width: 800px) {
+        height: 15rem;
+      }
     }
   }
 }

@@ -6,7 +6,7 @@ import Navigation from "../components/Navigation"
 import Project from "../components/Project"
 import data from "../data/projects.json"
 
-export default function Home() {
+export default function Projects() {
   return (
     <div>
       <Head
@@ -15,10 +15,15 @@ export default function Home() {
         description="These are some of the projects that I have built over the years. These project reflect my passion in software and design. My most used tools are Javascript, React, Node and MongoDB."
         url="https://www.samippoudel.com.np/projects"
       />
-      <Navigation active={true} />
+      <Navigation active={false} />
+      <div className="py-3"></div>
       <div className="py-3"></div>
       <section className="projects limit-width-lg ">
-        <h1 className="heading-lg">Projects</h1>
+        <h1 className="heading-lg text-left">Projects</h1>
+        <p className="paragraph mb-3">
+          These are some of the projects that I have built over the years that
+          reflect my passion in software and design.
+        </p>
 
         {data.map((project, index) => (
           <Project

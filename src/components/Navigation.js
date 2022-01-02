@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react"
 
 const Navigation = ({ active }) => {
   const [navbar, setNavbar] = useState(active)
+  const [showMobileNav, setMobileNav] = useState(false)
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -21,6 +22,7 @@ const Navigation = ({ active }) => {
   }
 
   const burgerClickHandler = () => {
+    setMobileNav(prevValue => !prevValue)
     document.querySelector(".navigation__hiddenNav").classList.toggle("shown")
     document.getElementById("burger-container").classList.toggle("open")
   }
@@ -33,11 +35,6 @@ const Navigation = ({ active }) => {
       }
     >
       <div className="limit-width-lg navigation">
-        <h1>
-          <Link to="/" className="navigation__logo">
-            Samip Poudel
-          </Link>
-        </h1>
         <nav className="navigation__mainNav">
           <ul className="navigation__navlinks">
             <li>
@@ -62,6 +59,15 @@ const Navigation = ({ active }) => {
               <Link
                 className="navigation__navlink"
                 activeClassName="navigation__navlink-active"
+                to="/#skills"
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navigation__navlink"
+                activeClassName="navigation__navlink-active"
                 to="/blog"
               >
                 Blog
@@ -70,6 +76,7 @@ const Navigation = ({ active }) => {
           </ul>
         </nav>
 
+        {/* Mobile Nav */}
         <nav className="navigation__hiddenNav">
           <ul className="navigation__hiddenNav__navlinks">
             <li>
@@ -99,22 +106,77 @@ const Navigation = ({ active }) => {
                 Blog
               </Link>
             </li>
+            <li>
+              <Link className="navigation__hiddenNav__navlink" to="/#skills">
+                Skills
+              </Link>
+            </li>
+            <li>
+              <a
+                className="navigation__hiddenNav__navlink"
+                href="/samip-poudel-resume.pdf"
+              >
+                Resume
+              </a>
+            </li>
+
+            <li>
+              <Link className="navigation__hiddenNav__navlink" to="/#contacts">
+                Contacts
+              </Link>
+            </li>
           </ul>
         </nav>
+
+        <div className="navigation__theme">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+          </svg>
+        </div>
       </div>
-      <div
+      <button
         id="burger-container"
         onClick={burgerClickHandler}
         onKeyDown={burgerClickHandler}
-        role="button"
         tabIndex={0}
       >
-        <div id="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+        {showMobileNav ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+        )}
+      </button>
     </header>
   )
 }

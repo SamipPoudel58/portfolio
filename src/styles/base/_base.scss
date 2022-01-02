@@ -11,7 +11,10 @@
   --c-text-black: #1e1e1e;
   --c-text-gray: #5a5a5a;
   --c-gray-light: #dcdcdc;
-  --c-off-white: #fdfcfc;
+  --c-off-white: #f9fafb;
+
+  --c-black-dark: #222222;
+  --c-black-md: #444444;
 }
 
 *,
@@ -55,6 +58,10 @@ html {
 body {
   box-sizing: border-box;
   background-color: var(--c-off-white);
+  color: var(--c-black-md);
+
+  font-family: "Karla", "Roboto", sans-serif;
+  line-height: 1.7;
 }
 
 ::selection {

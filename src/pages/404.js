@@ -4,7 +4,7 @@ import Navigation from "../components/Navigation"
 const NotFound = () => {
   return (
     <div className="notFound">
-      <Navigation active={true} />
+      <Navigation active={false} />
 
       <div className="notFound__content">
         <h1>404</h1>
