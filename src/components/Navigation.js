@@ -23,6 +23,7 @@ const Navigation = () => {
   const burgerClickHandler = () => {
     setMobileNav(prevValue => !prevValue)
     document.querySelector(".navigation__hiddenNav").classList.toggle("shown")
+    document.querySelector(".navigation__wrapper").classList.toggle("navigation__wrapper-fixed")
     document.getElementById("burger-container").classList.toggle("open")
   }
   return (
