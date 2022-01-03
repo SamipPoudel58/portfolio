@@ -22,7 +22,7 @@
     height: 100vh;
     transform: translate(0, -100%);
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.3s;
     visibility: hidden;
 
     &.shown {

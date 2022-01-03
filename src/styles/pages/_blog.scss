@@ -1,9 +1,10 @@
 .blog {
+  padding-top: 2rem;
   @media only screen and (max-width: 1024px) {
-    padding: 0 4rem;
+    padding: 2rem 4rem 0;
   }
   @media only screen and (max-width: 600px) {
-    padding: 0 2rem;
+    padding: 2rem 2rem 0;
   }
   // &__wrapper {
   //   @media only screen and (max-width: 600px) {
@@ -31,7 +32,7 @@
 
     @media only screen and (max-width: 600px) {
       flex-direction: column;
-      padding: 4rem 0;
+      padding: 3rem 0;
     }
 
     a {

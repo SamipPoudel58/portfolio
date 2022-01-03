@@ -132,6 +132,7 @@
 
     h3,
     h2 {
+      font-family: "IBM Plex Sans", sans-serif;
       color: var(--c-black-dark);
       padding-bottom: 1.5rem;
       font-weight: 700;
@@ -191,7 +192,7 @@
     /* Inline code */
     :not(pre) > code[class*="language-"] {
       padding: 0.4rem;
-      border-radius: 0.3em;
+      border-radius: 0.2em;
       background: var(--c-blockquote);
       color: var(--c-primary-dark);
       text-shadow: none;
