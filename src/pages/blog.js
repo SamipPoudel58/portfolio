@@ -14,6 +14,8 @@ const Blog = () => {
           node {
             title
             slug
+            isBlog
+            description
             publishedDate(formatString: "MMMM Do, YYYY")
             cover {
               gatsbyImageData(layout: FULL_WIDTH)
@@ -44,25 +46,31 @@ const Blog = () => {
           I write about web development and share my experiences as a developer.
         </p>
         <div className="blog__blogs">
-          {data.allContentfulBlogPost.edges.map(edge => (
-            <Link key={edge.node.slug} to={edge.node.slug}>
-              <div className="blog__blog">
-                <div className="blog__details">
-                  <p className="blog__details-date">
-                    {edge.node.publishedDate} .{" "}
-                    {edge.node.body.childMarkdownRemark.timeToRead} min read
-                  </p>
-                  <h3 className="blog__details-title">{edge.node.title}</h3>
-                </div>
-                <GatsbyImage
-                  className="blog__cover"
-                  image={getImage(edge.node.cover)}
-                  src=""
-                  alt="coverPhoto"
-                />
-              </div>
-            </Link>
-          ))}
+          {data.allContentfulBlogPost.edges.map(edge => {
+            if (edge.node.isBlog) {
+              return (
+                <Link key={edge.node.slug} to={edge.node.slug}>
+                  <div className="blog__blog">
+                    <div className="blog__details">
+                      <p className="blog__details-date">
+                        {edge.node.publishedDate} .{" "}
+                        {edge.node.body.childMarkdownRemark.timeToRead} min read
+                      </p>
+                      <h3 className="blog__details-title">{edge.node.title}</h3>
+                    </div>
+                    <GatsbyImage
+                      className="blog__cover"
+                      image={getImage(edge.node.cover)}
+                      src=""
+                      alt="coverPhoto"
+                    />
+                  </div>
+                </Link>
+              )
+            } else {
+              return null
+            }
+          })}
         </div>
       </section>
       <Contact />
