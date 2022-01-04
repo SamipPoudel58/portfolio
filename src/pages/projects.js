@@ -20,7 +20,7 @@ export default function Projects() {
 
       <section className="projects limit-width-lg ">
         <h1 className="heading-lg text-left">Projects</h1>
-        <p className="paragraph">
+        <p className="paragraph mb-2">
           These are some of the projects that I have built over the years that
           reflect my passion in software and design.
         </p>

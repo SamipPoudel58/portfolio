@@ -56,7 +56,7 @@ const Blog = props => {
       <Head
         title={props.data.contentfulBlogPost.title}
         ogtitle={props.data.contentfulBlogPost.title}
-        description={`Article by Samip Poudel on the topic ${props.data.contentfulBlogPost.title}`}
+        description={props.data.contentfulBlogPost.description}
         image={`https:${props.data.contentfulBlogPost.cover.file.url}`}
         url={`https://www.samippoudel.com.np/blog/${props.data.contentfulBlogPost.title}`}
         typeOfContent="article"

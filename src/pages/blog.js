@@ -73,6 +73,7 @@ const Blog = () => {
           })}
         </div>
       </section>
+      <div className="py-3"></div>
       <Contact />
       <Footer />
     </div>

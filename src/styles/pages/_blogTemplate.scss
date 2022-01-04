@@ -76,6 +76,10 @@
       margin: 2rem 0 2rem 2rem;
     }
 
+    h2 + ul {
+      margin: 0 0 2rem 2rem;
+    }
+
     ul ul {
       list-style-type: disc;
       margin: 1rem 0 1rem 2rem;
@@ -147,8 +151,11 @@
     }
 
     a {
-      text-decoration: underline;
       color: var(--c-primary);
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     hr {
@@ -166,6 +173,11 @@
       text-align: left;
       font-size: 1.8rem;
       line-height: 1.7;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.4rem;
+        line-height: 1.5;
+      }
     }
 
     blockquote {
@@ -176,11 +188,11 @@
       margin: 2rem 0;
 
       & > p {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         margin-bottom: 0rem;
         word-wrap: break-word;
         @media only screen and (max-width: 600px) {
-          font-size: 1.4rem;
+          font-size: 1.6rem;
         }
       }
     }
@@ -211,8 +223,8 @@
 
     code[class*="language-"],
     pre[class*="language-"] {
-      font-family: "Fira Code", Consolas, Inconsolata, Monaco, "Courier New",
-        Courier, monospace;
+      // font-family: "Fira Code", Consolas, Inconsolata, Monaco, "Courier New",
+      //   Courier, monospace;
       font-size: 1.4rem;
 
       @media only screen and (max-width: 600px) {

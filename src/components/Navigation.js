@@ -23,7 +23,9 @@ const Navigation = () => {
   const burgerClickHandler = () => {
     setMobileNav(prevValue => !prevValue)
     document.querySelector(".navigation__hiddenNav").classList.toggle("shown")
-    document.querySelector(".navigation__wrapper").classList.toggle("navigation__wrapper-fixed")
+    document
+      .querySelector(".navigation__wrapper")
+      .classList.toggle("navigation__wrapper-fixed")
     document.getElementById("burger-container").classList.toggle("open")
   }
   return (
@@ -49,15 +51,7 @@ const Navigation = () => {
                 Projects
               </Link>
             </li>
-            <li>
-              <Link
-                className="navigation__navlink"
-                activeClassName="navigation__navlink-active"
-                to="/#skills"
-              >
-                Skills
-              </Link>
-            </li>
+
             <li>
               <Link
                 className="navigation__navlink"
@@ -65,6 +59,25 @@ const Navigation = () => {
                 to="/blog"
               >
                 Blog
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                className="navigation__navlink"
+                activeClassName="navigation__navlink-active"
+                to="/blog/uses"
+              >
+                Uses
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navigation__navlink"
+                activeClassName="navigation__navlink-active"
+                to="/#contacts"
+              >
+                Contacts
               </Link>
             </li>
           </ul>

@@ -1,6 +1,7 @@
 .projects {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 6rem;
+
   @media only screen and (max-width: 1024px) {
     padding: 2rem 4rem 6rem;
   }
@@ -147,10 +148,8 @@
   }
 
   &__allProjects {
-    display: flex;
-    align-items: center;
     color: var(--c-black-md);
-    gap: 1rem;
+
     font-size: 2rem;
     transition: color 0.3s ease;
 
@@ -159,10 +158,15 @@
     }
 
     &:hover {
+      cursor: pointer;
       color: var(--c-black-dark);
     }
 
     a {
+      display: block;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
       color: var(--c-black-md);
 
       &:hover {
