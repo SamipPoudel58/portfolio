@@ -91,7 +91,7 @@ export default function Home() {
           {data.allContentfulBlogPost.edges.map((edge, index) => {
             if (edge.node.isBlog && index < 2) {
               return (
-                <Link key={edge.node.slug} to={edge.node.slug}>
+                <Link key={edge.node.slug} to={"/blog/" + edge.node.slug}>
                   <div className="blog__blog">
                     <div className="blog__details">
                       <p className="blog__details-date">
