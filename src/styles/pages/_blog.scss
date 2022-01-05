@@ -34,7 +34,8 @@
 
     @media only screen and (max-width: 600px) {
       flex-direction: column;
-      padding: 3rem 0;
+      // padding: 3rem 0 0;
+      // margin-bottom: 0;
     }
 
     a {
@@ -57,26 +58,32 @@
     // border: 1px solid #e5e7eb;
 
     border-radius: 1rem;
+
+    @media only screen and (max-width: 600px) {
+      gap: 0;
+    }
   }
 
   &__details {
     &-title {
-      font-size: 2rem;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 600;
+      font-size: 2.4rem;
       color: var(--c-black-dark);
       transition: color 0.3s;
       line-height: 1.4;
       word-wrap: break-word;
       @media only screen and (max-width: 600px) {
-        text-align: center;
+        font-size: 2rem;
       }
     }
     &-date {
       font-size: 1.4rem;
       color: var(--c-black-md);
       margin-top: 1rem;
-      @media only screen and (max-width: 600px) {
-        text-align: center;
-      }
+      // @media only screen and (max-width: 600px) {
+      //   text-align: center;
+      // }
     }
   }
 

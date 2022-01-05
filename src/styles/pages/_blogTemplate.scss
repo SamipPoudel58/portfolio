@@ -11,31 +11,36 @@
   &__cover {
     width: 100%;
     border-radius: 0.8rem;
+
+    @media only screen and (max-width: 600px) {
+      border-radius: 0.5rem;
+    }
   }
 
   &__title {
     margin-top: 3rem;
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     font-family: "IBM Plex Sans";
     line-height: 1.4;
     color: var(--c-black);
     @media only screen and (max-width: 600px) {
-      font-size: 2.4rem;
+      font-size: 2.8rem;
     }
     @media only screen and (max-width: 500px) {
-      text-align: center;
+      margin-top: 2rem;
+      // text-align: center;
     }
   }
 
   &__date {
-    margin-top: 1rem;
+    // margin-top: 1rem;
     font-size: 1.8rem;
     color: var(--c-black-md);
     @media only screen and (max-width: 600px) {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
     @media only screen and (max-width: 500px) {
-      text-align: center;
+      // text-align: center;
     }
   }
 
@@ -61,6 +66,9 @@
       display: block;
       margin: 3rem 0;
       box-shadow: 4px 4px 24px rgba(143, 142, 142, 0.1);
+      @media only screen and (max-width: 600px) {
+        border-radius: 0.5rem;
+      }
     }
 
     p {
@@ -143,11 +151,15 @@
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
 
     h3 {
       font-size: 2rem;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.8rem;
+      }
     }
 
     a {
@@ -187,12 +199,16 @@
       // font-style: italic;
       margin: 2rem 0;
 
+      @media only screen and (max-width: 600px) {
+        padding: 1rem 1.5rem;
+      }
+
       & > p {
         font-size: 1.8rem;
         margin-bottom: 0rem;
         word-wrap: break-word;
         @media only screen and (max-width: 600px) {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
         }
       }
     }

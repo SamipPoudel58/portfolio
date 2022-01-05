@@ -100,7 +100,13 @@
     svg {
       width: 6rem;
       height: 6rem;
-      fill: var(--c-primary-light);
+      fill: var(--c-primary);
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
 
       // @media only screen and (max-width: 600px) {
       //   height: 4rem;
