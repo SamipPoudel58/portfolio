@@ -114,10 +114,15 @@ const Navigation = () => {
               </Link>
             </li>
             <li>
-              <Link className="navigation__hiddenNav__navlink" to="/#skills">
-                Skills
+              <Link
+                className="navigation__hiddenNav__navlink"
+                activeClassName="navigation__hiddenNav__navlink-active"
+                to="/uses"
+              >
+                Uses
               </Link>
             </li>
+
             <li>
               <a
                 className="navigation__hiddenNav__navlink"
@@ -125,12 +130,6 @@ const Navigation = () => {
               >
                 Resume
               </a>
-            </li>
-
-            <li>
-              <Link className="navigation__hiddenNav__navlink" to="/#contacts">
-                Contacts
-              </Link>
             </li>
           </ul>
         </nav>

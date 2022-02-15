@@ -1,8 +1,10 @@
 import React from "react"
+import Navigation from "./Navigation"
 
 const Intro = () => {
   return (
     <section className="intro__wrapper">
+      <Navigation active={false} />
       <div className="intro">
         <div className="intro__content">
           <div className="intro__texts">
