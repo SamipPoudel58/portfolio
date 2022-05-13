@@ -40,7 +40,7 @@ Head.defaultProps = {
   ogtitle: "Samip Poudel | Full-Stack Developer | Designer",
   description:
     "Hey, I'm Samip. A freelance Full-Stack Web Developer from Nepal. I love design as much as Software Development. I work with JavaScript, TypeScript, React, Node.js & MongoDB.",
-  image: "https://www.samippoudel.com.np/open_graph.png",
+  image: "https://www.samippoudel.com.np/samip_poudel_open_graph.png",
   url: "https://www.samippoudel.com.np",
   typeOfContent: "website",
 }

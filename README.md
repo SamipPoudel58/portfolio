@@ -1,5 +1,5 @@
 <a href="https://samiptter.herokuapp.com/">
-    <img src="./static/open_graph.png" alt="portfolio open graph">
+    <img src="./static/samip_poudel_open_graph.png" alt="portfolio open graph">
   </a>
 
   <h2 align="center">Samip Poudel's Portfolio Website</h2>
