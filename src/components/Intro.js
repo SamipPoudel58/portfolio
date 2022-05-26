@@ -24,7 +24,7 @@ const Intro = () => {
             </p>
           </div>
           <div className="intro__image">
-            <img src="/profile.jpg" alt="profile" />
+            <img width="795" height="796" src="/profile.webp" alt="profile" />
           </div>
         </div>
       </div>

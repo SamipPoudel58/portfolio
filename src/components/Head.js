@@ -30,6 +30,13 @@ const Head = ({ title, ogtitle, description, image, url, typeOfContent }) => {
       <meta property="twitter:site" content="@samip4sure" />
       <meta property="twitter:creator" content="@samip4sure" />
 
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code&family=IBM+Plex+Sans:wght@400;600;700&family=Karla:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+
       <script async src="https://cdn.splitbee.io/sb.js"></script>
     </Helmet>
   )
