@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <section id="skills" className="skills__wrapper">
       <div className="skills limit-width-lg">
-        <h1 className="heading-lg text-left">Skills</h1>
+        <h2 className="heading-lg text-left">Skills</h2>
 
         <div className="skills__content">
           <div className="skills__names">

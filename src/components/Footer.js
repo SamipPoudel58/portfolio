@@ -9,6 +9,7 @@ const Footer = () => {
         </p>
         <div className="footer__socialLinks">
           <a
+            aria-label="Github"
             href="https://github.com/SamipPoudel58"
             className="footer__socialLink footer__socialLink__github"
           >
@@ -27,7 +28,8 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/samip-poudel-570a371a6/"
+            aria-label="Linkedin"
+            href="https://www.linkedin.com/in/samippoudel"
             className="footer__socialLink footer__socialLink__linkedin"
           >
             <svg
@@ -45,6 +47,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
+            aria-label="Twitter"
             href="https://twitter.com/samip4sure"
             className="footer__socialLink footer__socialLink__twitter"
           >
@@ -63,6 +66,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
+            aria-label="Dev.to"
             href="https://dev.to/samippoudel"
             className="footer__socialLink footer__socialLink__devto"
           >

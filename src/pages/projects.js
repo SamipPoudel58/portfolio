@@ -19,7 +19,7 @@ export default function Projects() {
       <div className="py-3"></div>
 
       <section className="projects limit-width-lg ">
-        <h1 className="heading-lg text-left">Projects</h1>
+        <h2 className="heading-lg text-left">Projects</h2>
         <p className="paragraph mb-2">
           These are some of the projects that I have built over the years that
           reflect my passion in software and design.

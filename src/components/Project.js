@@ -41,7 +41,7 @@ const Projects = ({ title, description, github, index, link, stacks }) => {
         alt={`cover photo for project "${title}"`}
       />
       <div className="projects__detail">
-        <h2 className="projects__title">{title}</h2>
+        <h3 className="projects__title">{title}</h3>
         <p className="projects__description">{`${description.substring(0, 50)}${
           description.length >= 50 ? "..." : ""
         }`}</p>
@@ -53,10 +53,18 @@ const Projects = ({ title, description, github, index, link, stacks }) => {
           ))}
         </div>
         <div className="projects__links">
-          <a href={link} className="projects__links-live">
+          <a
+            href={link}
+            className="projects__links-live"
+            aria-label={`visit the live version of Samip Poudel's project named '${title}'`}
+          >
             View Live
           </a>
-          <a href={github} className="projects__links-more">
+          <a
+            href={github}
+            className="projects__links-more"
+            aria-label={`learn more about Samip Poudel's project named '${title}'`}
+          >
             See More
           </a>
         </div>

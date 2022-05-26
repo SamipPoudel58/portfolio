@@ -134,7 +134,11 @@ const Navigation = () => {
           </ul>
         </nav>
 
-        <button onClick={themeToggle} className="navigation__theme">
+        <button
+          aria-label="toggle theme"
+          onClick={themeToggle}
+          className="navigation__theme"
+        >
           {darkMode ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -161,10 +165,10 @@ const Navigation = () => {
         </button>
       </div>
       <button
+        aria-label="toggle menu"
         id="burger-container"
         onClick={burgerClickHandler}
-        onKeyDown={burgerClickHandler}
-        tabIndex={0}
+        tabIndex="0"
       >
         {showMobileNav ? (
           <svg

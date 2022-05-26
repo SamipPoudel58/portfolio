@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section id="contacts" className="contact__wrapper">
       <div className="contact limit-width-lg">
-        <h1 className="heading-lg text-left">Hey!</h1>
+        <h2 className="heading-lg text-left">Hey!</h2>
 
         <div className="contact__contents">
           <p className="contact__description">
@@ -14,6 +14,7 @@ const Contact = () => {
             <a
               href="mailto:sawmeep58@gmail.com"
               className="contact__email minor-links"
+              aria-label="email address of Samip Poudel"
             >
               sawmeep58@gmail.com
             </a>
@@ -25,6 +26,7 @@ const Contact = () => {
             <a
               href="/samip-poudel-resume.pdf"
               className="contact__resume-link minor-links"
+              aria-label="link to download Samip Poudel's resume"
             >
               Download My Resume
             </a>

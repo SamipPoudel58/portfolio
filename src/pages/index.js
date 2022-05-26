@@ -65,7 +65,7 @@ export default function Home() {
 
       <Intro />
       <section className="projects limit-width-lg">
-        <h1 className="text-left heading-lg">Projects</h1>
+        <h2 className="text-left heading-lg">Projects</h2>
         <p className="paragraph mb-3">
           These are some of the projects that I have built over the years that
           reflect my passion in software and design.
@@ -86,7 +86,7 @@ export default function Home() {
           )
         })}
         <div className="projects__allProjects">
-          <Link to="/projects">
+          <Link to="/projects" aria-label="see more projects by Samip Poudel">
             <span>More Projects</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       <section className="blog limit-width-lg">
-        <h1 className="heading-lg text-left">Articles</h1>
+        <h2 className="heading-lg text-left">Articles</h2>
         <p className="paragraph">
           I write about web development and share my experiences as a developer.
         </p>
@@ -115,7 +115,11 @@ export default function Home() {
           {data.allContentfulBlogPost.edges.map((edge, index) => {
             if (edge.node.isBlog && index < 2) {
               return (
-                <Link key={edge.node.slug} to={"/blog/" + edge.node.slug}>
+                <Link
+                  key={edge.node.slug}
+                  to={"/blog/" + edge.node.slug}
+                  aria-label={`read article by Samip Poudel on the topic '${edge.node.title}'`}
+                >
                   <div className="blog__blog">
                     <div className="blog__details">
                       <p className="blog__details-date">
@@ -139,7 +143,7 @@ export default function Home() {
           })}
         </div>
         <div className="projects__allProjects">
-          <Link to="/blog">
+          <Link aria-label="see more articles by Samip Poudel" to="/blog">
             <span>More Articles</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
