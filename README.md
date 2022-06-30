@@ -1,4 +1,4 @@
-<a href="https://samiptter.herokuapp.com/">
+<a href="https://samippoudel.com.np/">
     <img src="./static/samip_poudel_open_graph.png" alt="portfolio open graph">
   </a>
 
